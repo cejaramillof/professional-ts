@@ -1,6 +1,7 @@
 {
   "scripts": {
     "build": "parcel build index.html",
+    "clean": "rm -rf dist/",
     "dev": "node ./server/index.js",
     "lint": "eslint src server tests --ext .js,.ts,.jsx,.tsx",
     "test": "yarn test-jest",
