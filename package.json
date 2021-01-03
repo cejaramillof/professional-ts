@@ -1,6 +1,8 @@
 {
   "scripts": {
     "build": "parcel build index.html",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch --preserveWatchOutput",
     "clean": "rm -rf dist/",
     "dev": "node ./server/index.js",
     "lint": "eslint src server tests --ext .js,.ts,.jsx,.tsx",
