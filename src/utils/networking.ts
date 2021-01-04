@@ -4,9 +4,9 @@ import HTTPError from './http-error';
 /**
  *
  * @param input
- * @param [init]
+ * @param (init)
  */
-async function getJSON(input: RequestInfo, init: RequestInit) {
+async function getJSON(input: RequestInfo, init?: RequestInit) {
   try {
     const response = await fetch(input, init);
     const responseJSON = await response.json();

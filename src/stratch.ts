@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const x: {
   user: {
     name: string;
