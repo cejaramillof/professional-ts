@@ -1,7 +1,7 @@
 import { apiCall } from '../utils/networking';
 import type { ITeam } from '../types';
 
-function isITeam(arg: any): arg is ITeam {
+export function isITeam(arg: any): arg is ITeam {
   return (
     typeof arg.iconUrl === 'string' &&
     typeof arg.name === 'string' &&
@@ -10,7 +10,7 @@ function isITeam(arg: any): arg is ITeam {
   );
 }
 
-function assertIsTypedArray<T>(arg: any, check: (val: any) => val is T): asserts arg is T[] {
+export function assertIsTypedArray<T>(arg: any, check: (val: any) => val is T): asserts arg is T[] {
   if (!Array.isArray(arg))
     throw new Error(`Not an array: ${JSON.stringify(arg)}`);
   // return arg.filter(item => !check(item));
